@@ -10,8 +10,12 @@ console.log();
 //console.log(nome, + sobrenome);
 console.log(nome + " " + sobrenome);
 
+console.log();
 //nessa caso para concatenar texto com variáveis usa-se a sentença ${}
-//console.log(`Meu nome é ${nome } ${sobrenome}`);
+console.log(`Meu nome é ${nome } ${sobrenome}`);
 
-const nomeCompleto = nome + sobrenome;
+console.log();
+const nomeCompleto = nome + " " + sobrenome;
+console.log(nomeCompleto)
 
+console.log();
