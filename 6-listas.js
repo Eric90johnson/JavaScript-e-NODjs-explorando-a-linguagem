@@ -15,5 +15,10 @@ listaDeDestinos.push(`Curitiba`) // adicionando itens na lista
 
 console.log("Destinos possíveis: ");
 console.log();
-
 console.log(listaDeDestinos);
+
+console.log();
+listaDeDestinos.splice(1,1) //remove intes da lista primeiro 1 = a posição a ser excluida e segundo 1 = a quintidade a ser excluida
+console.log(listaDeDestinos);
+
+console.log();
