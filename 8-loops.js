@@ -1,4 +1,4 @@
-console.log(`Trabalhando com condicionas`)
+console.log(`\n Trabalhando com Loops`)
 
 
 const listaDeDestinos = new Array(
@@ -9,30 +9,22 @@ const listaDeDestinos = new Array(
 
 const idadeComprador = 15;
 const estaAcompanhado = false;
-const temPassagemComprada = true;
+let temPassagemComprada = false;
+const destino = "Rio de Janeiro";
 
 //listaDeDestinos.push(`Curitiba`) 
 
-console.log("Destinos possíveis: ");
-console.log();
+console.log("\n Destinos possíveis: ");
 console.log(listaDeDestinos);
 
-if(idadeComprador >= 18 || estaAcompanhado == true) {
-    console.log("Comprador maior de Idade");
-    listaDeDestinos.splice(1,1) //removendo itens   
-} 
-else {
-    console.log("NÃO POSSO VENDER A PASSAGEM: Não é Maior de Idade e não esta acompanhada!");
-}  
+const podeComprar = idadeComprador >= 18 || estaAcompanhado == true 
        
-console.log("embarque: \n \n")
-if(idadeComprador >= 18 && temPasagemComprda) {
-    console.log("Boa Viagem!")
-} else {
-    console.log("Você não pode embarcar!")
+let contador = 0;
+while(contador<3) {
+    if (listaDeDestinos[contador] == destino) {
+        console.log("Destino existe");
+    } else {
+        console.log("Destino não existe");
+    }
+    contador += 1;
 }
-
-
-console.log(listaDeDestinos);
-
-console.log();
