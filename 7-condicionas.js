@@ -20,15 +20,14 @@ if(idadeComprador >= 18) {
     console.log("Comprador maior de Idade");
     listaDeDestinos.splice(1,1) //removendo itens
     
-} else{
-    //a pessoa é menor de idade
-    if(estaAcompanhado) {
-        console.log("Comprador é menor de idade e esta acompanhado");
-        listaDeDestinos.splice(1,1); //
-    } else {
-        console.log("NÃO POSSO VENDER A PASSAGEM: Não é Maior de Idade e não esta acompanhada!");
-    }    
-}
+} else if(estaAcompanhado) { //a pessoa é menor de idade
+    console.log("Comprador é menor de idade e esta acompanhado");
+    listaDeDestinos.splice(1,1); //
+} else {
+    console.log("NÃO POSSO VENDER A PASSAGEM: Não é Maior de Idade e não esta acompanhada!");
+}  
+       
+
 
 console.log(listaDeDestinos);
 
