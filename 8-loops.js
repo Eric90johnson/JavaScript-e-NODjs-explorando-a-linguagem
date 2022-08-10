@@ -31,4 +31,20 @@ while(contador<3) {
     contador += 1;
 }
 
-console.log("Destino existe: ", destinoExiste)
+console.log("Destino existe: ", destinoExiste);
+
+if(podeComprar && destinoExiste) {
+    console.log("Boa Viagem!")
+} else {
+    console.log("Desculpe, tivemos um problema na transação!")
+}
+
+for(let cont = 0 ; contador < 3; cont++) {
+    
+    if (listaDeDestinos[contador] == destino) {
+        destinoExiste = true;
+        break;
+    }    
+}
+
+
